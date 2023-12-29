@@ -1,2 +1,0 @@
-# MetaVerseFullImmersion
-MyJob and Live
