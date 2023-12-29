@@ -1,0 +1,534 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+:root{
+  --index: calc(1vw + 1vh);
+  --color-header: #b7b4b8;
+  --color-text: #f4efec;
+  --gallert-gap: calc(var(--index)*4)
+}
+
+
+
+body{
+  padding: 20px;
+  background-color: #121212;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+p {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+}
+
+/* Animation */
+p {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 1800px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(255, 0, 170, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+.div{
+  color: #5315b6;
+  border-left: 15px solid;
+  height: 620px;
+  position: absolute;
+  left: 40%;
+  margin-left: 1px;
+  top: 225vh;
+}
+
+.div1{
+  color: #b034cf;
+  border-left: 15px solid;
+  height: 620px;
+  position: absolute;
+  left: 50%;
+  margin-left: 1px;
+  top: 420vh;
+}
+
+.div2{
+  color: #398cb3;
+  border-left: 15px solid;
+  height: 620px;
+  position: absolute;
+  left: 53%;
+  margin-left: 1px;
+  top: 610vh;
+}
+.div3{
+  color: #7eb339;
+  border-left: 15px solid;
+  height: 920px;
+  position: absolute;
+  left: 53%;
+  margin-left: 1px;
+  top: 800vh;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  box-shadow: 0 5px 10px
+  #000;
+  z-index: 1;
+}
+
+header .logo{
+  font-style: 20px;
+  font-weight: 900;
+  color: #000000;
+}
+
+iframe{
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  z-index: 1;
+}
+header .logo:hover{
+  transform: scale(1.2)
+}
+
+header nav ul li{
+  position: relative;
+  float: left;
+}
+
+header nav ul li a{
+  padding: 15px;
+  color: #000;
+  font-size: 16px;
+  display: block;
+}
+
+header nav ul li a:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+nav ul li ul{
+  position: absolute;
+  left: 0;
+  width: 180px;
+  background: #fff;
+  display: none;
+}
+
+nav ul li ul li{
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+nav ul li ul li ul{
+  left: 180px;
+  top: 0;
+}
+
+nav ul li:hover > ul{
+  display: initial;
+}
+
+@font-face {
+  font-family: tnr;
+  src: url(..//fonts/tnr.ttf);
+}
+
+h1, h2, h3, h3, h4 ,h5, h6{
+  font-family: tnr;
+}
+
+
+body{
+  background-image: url(../img/SAIT.png);
+  background-size: 100%;
+  height: 990vh;
+  color: #bb7ece;
+  font-family: tnr;
+  overflow-x:hidden;
+}
+
+
+
+.hero{
+  width: calc(var(--index)*33);
+  position: absolute;
+  left: 75vw;
+  bottom:25vh;
+}
+.hero2{
+  width: calc(var(--index)*35);
+  position:absolute;
+  left: 47.5vw;
+  bottom:-25vh;
+}
+
+.main-header{
+  height: 1000vh;
+}
+
+
+.container{
+  padding: 0 3vw;
+}
+
+.main-title{
+  font-size: calc(var(--index));
+  position:absolute;
+  color: #fff;
+  top: 150vh;
+  line-height: 1;
+}
+.main-title2{
+  padding: 0 5vw;
+  font-size: calc(var(--index));
+  position:absolute;
+  color: #fff;
+  top:227vh;
+  line-height: 1;
+  left: 38vw;
+}
+.main-title3{
+  padding: 0 5vw;
+  font-size: calc(var(--index));
+  position:absolute;
+  color: #fff;
+  top:420vh;
+  line-height: 1;
+  right: 45vw;
+}
+.main-title4{
+  padding: 0 5vw;
+  font-size: calc(var(--index));
+  position:absolute;
+  color: #fff;
+  top: 610vh;
+  line-height: 1;
+  left: 50vw;
+}
+.main-title5{
+  padding: 0 5vw;
+  font-size: calc(var(--index));
+  position:absolute;
+  color: #fff;
+  top: 800vh;
+  line-height: 1;
+  left: 50vw;
+}
+
+.main-vid{
+  font-size: calc(var(--index));
+  position:absolute;
+  color: #fff;
+  top: 310vh;
+  line-height: 1;
+  left: 25vw;
+}
+
+.main-vid2{
+  font-size: calc(var(--index));
+  position:absolute;
+  color: #fff;
+  top: 500vh;
+  line-height: 1;
+  left: 25vw;
+}
+
+.main-vid3{
+  font-size: calc(var(--index));
+  position:absolute;
+  color: #fff;
+  top: 690vh;
+  line-height: 1;
+  left: 25vw;
+}
+
+.vd1{
+  width: calc(var(--index)*40);
+  position:absolute;
+  top: 317vh;
+  right: 500px;
+}
+
+.vd2{
+  width: calc(var(--index)*40);
+  position:absolute;
+  top: 507vh;
+  right: 500px;
+}
+.vd3{
+  width: calc(var(--index)*40);
+  position:absolute;
+  top: 698vh;
+  right: 500px;
+}
+
+.img-bgr{
+  width: calc(var(--index));
+  position:absolute;
+  top: 200vh;
+
+}
+
+.pic1{
+  width: calc(var(--index)*20);
+  position:absolute;
+  top: 20vh;
+  border-radius: 10%;
+}
+
+.pic2{
+  width: calc(var(--index)*27);
+  position:absolute;
+  top: 220vh;
+  border-radius: 10%;
+  left: 55vw;
+}
+.pic3{
+  width: calc(var(--index)*30);
+  position:absolute;
+  top: 410vh;
+  border-radius: 10%;
+  left: 2vw;
+}
+
+.pic4{
+  width: calc(var(--index)*30);
+  position:absolute;
+  top: 590vh;
+  border-radius: 10%;
+  left: 2vw;
+}
+
+
+@font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+.sign {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 43vw;
+  top: 700vh;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
